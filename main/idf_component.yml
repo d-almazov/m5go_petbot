@@ -1,0 +1,10 @@
+## Dependencies for M5GO Petbot (ESP-IDF 6.1)
+dependencies:
+  idf:
+    version: ">=5.4"
+
+  espressif/m5stack_core:
+    version: "^2.0.2"
+
+  espressif/led_strip:
+    version: "^3.0.0"

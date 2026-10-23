@@ -1,0 +1,22 @@
+idf_component_register(
+    SRCS
+        "app_main.c"
+        "app_state.c"
+        "ui/ui.c"
+        "sensors/pir.c"
+        "sensors/env_sht30.c"
+        "sensors/imu.c"
+        "sensors/leds.c"
+        "audio/beep.c"
+    INCLUDE_DIRS
+        "."
+        "ui"
+        "sensors"
+        "audio"
+    REQUIRES
+        driver
+        esp_lcd
+        esp_timer
+        freertos
+        nvs_flash
+)
